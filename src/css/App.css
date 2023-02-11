@@ -24,3 +24,18 @@ body {
   -webkit-backdrop-filter: blur(10.2px);
   border: 1px solid rgba(19, 131, 197, 0.65);
 }
+
+.selected:active {
+  border: 8px solid #1383c5;
+}
+
+.chosen-img {
+  border-width: 8px;
+  border-color: #1383c5;
+  border-style: solid;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  transform: scale(2);
+}

@@ -1,30 +1,30 @@
 import { Link } from "react-router-dom";
 
-export default function Question0({ id, onButtonClick }) {
+export default function Question3({ id, onButtonClick }) {
   const parsedID = parseInt(id, 10);
   return (
     <div className="flex justify-center items-center text-white w-screen h-screen ">
       <div className="question h-auto w-2/5 flex flex-col justify-center items-center">
         <h1 className="p-1 border w-full text-center text-4xl font-bold">
           <p>{parsedID}/10</p>
-          Jaké verze má rozhrání PCI-Express ?
+           Co NEPATŘÍ mezi vstupní zařízení ?
         </h1>
         <form action="" className="w-full text-xl">
           <div className=" p-4 border w-full flex items-center text-3xl ">
-            <input type="checkbox" value="PCIe 1.0" name="check[]" />
-            <span className="ml-2">PCIe 1.0</span>
+            <input type="radio" value="Klávesnice" name="q3" />
+            <span className="ml-2">Klávesnice</span>
           </div>
           <div className="p-4 border w-full flex items-center text-3xl">
-            <input type="checkbox" value="PCIe 2.0" name="check[]" />
-            <span className="ml-2">PCIe 2.0</span>
+            <input type="radio" value="Myš" name="q3" />
+            <span className="ml-2">Myš</span>
           </div>
           <div className="p-4 border w-full flex items-center text-3xl">
-            <input type="checkbox" value="PCIe 7.5" name="check[]" />
-            <span className="ml-2">PCIe 7.5</span>
+            <input type="radio" value="Trackpoint" name="q3" />
+            <span className="ml-2">Trackpoint</span>
           </div>
           <div className="p-4 border w-full flex items-center text-3xl">
-            <input type="checkbox" value="PCIe 6.0" name="check[]" />
-            <span className="ml-2">PCIe 6</span>
+            <input type="radio" value="PCIe 6.0" name="q3" />
+            <span className="ml-2">Tiskárna</span>
           </div>
           <div className=" w-full h-fit justify-end flex items-center text-3xl">
             <Link
