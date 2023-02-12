@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 export default function Question7({ id, onButtonClick }) {
     const parsedID = parseInt(id, 10);
     return (
