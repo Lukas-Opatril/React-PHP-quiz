@@ -17,19 +17,19 @@ export default function Question9({ id, onButtonClick }) {
                         
                     </div>
                     <div className=" p-4 border w-full flex items-center text-2xl ">
-            <input type="checkbox" value="os" name="check[]" />
+            <input type="checkbox" value="os" name="check2[]" />
             <span className="ml-2">Spuštění počítačového operačního systému</span>
           </div>
           <div className="p-4 border w-full flex items-center text-2xl">
-            <input type="checkbox" value="pc" name="check[]" />
+            <input type="checkbox" value="pc" name="check2[]" />
             <span className="ml-2">Spravuje datový tok mezi operačním systémem (OS) počítače a připojenými zařízeními, jako je pevný disk, grafický adaptér, klávesnice, myš a tiskárna.</span>
           </div>
           <div className="p-4 border w-full flex items-center text-2xl">
-            <input type="checkbox" value="ram" name="check[]" />
+            <input type="checkbox" value="ram" name="check2[]" />
             <span className="ml-2">Zkontroluje, jestli není počítač nakažený virem</span>
           </div>
           <div className="p-4 border w-full flex items-center text-2xl">
-            <input type="checkbox" value="company" name="check[]" />
+            <input type="checkbox" value="company" name="check2[]" />
             <span className="ml-2">Stáhne a automaticky nainstaluje nejnovější ovladače pro grafickou kartu</span>
           </div>
 

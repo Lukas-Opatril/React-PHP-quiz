@@ -12,19 +12,19 @@ export default function Question0({ id, onButtonClick }) {
         </h1>
         <form action="" className="w-full text-xl">
           <div className=" p-4 border w-full flex items-center text-3xl ">
-            <input type="radio" name="q0" id="" />
+            <input type="radio" name="q0" id="" value = "PCI" />
             <span className="ml-2">PCI</span>
           </div>
           <div className="p-4 border w-full flex items-center text-3xl">
-            <input type="radio" name="q0" id="" />
+            <input type="radio" name="q0" id="" value = "AGP"/>
             <span className="ml-2">AGP</span>
           </div>
           <div className="p-4 border w-full flex items-center text-3xl">
-            <input type="radio" name="q0" id="" />
+            <input type="radio" name="q0" id=""  value="ISA"/>
             <span className="ml-2">ISA</span>
           </div>
           <div className="p-4 border w-full flex items-center text-3xl">
-            <input type="radio" name="q0" id="" />
+            <input type="radio" name="q0" id=""  value= "ESA"/>
             <span className="ml-2">ESA</span>
           </div>
           <div className=" w-full h-fit justify-end flex items-center text-3xl">

@@ -23,7 +23,7 @@ export default function Question3({ id, onButtonClick }) {
             <span className="ml-2">Trackpoint</span>
           </div>
           <div className="p-4 border w-full flex items-center text-3xl">
-            <input type="radio" value="PCIe 6.0" name="q3" />
+            <input type="radio" value="Tiskárna" name="q3" />
             <span className="ml-2">Tiskárna</span>
           </div>
           <div className=" w-full h-fit justify-end flex items-center text-3xl">

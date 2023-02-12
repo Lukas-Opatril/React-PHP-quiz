@@ -5,10 +5,12 @@ document.addEventListener("click", function (event) {
     const imgArray = Array.from(document.querySelectorAll("IMG"));
     imgArray.forEach((oneImg) => {
       oneImg.classList.remove("chosen-img");
-      oneImg.removeAttribute("id");
     });
+    document.getElementById("hidden").removeAttribute("name");
     event.target.classList.add("chosen-img");
-    event.target.addAttribute("id", "q6-chosen");
+    document
+      .getElementById("hidden")
+      .setAttribute("name", `${event.target.alt}`);
   }
 });
 
@@ -53,6 +55,7 @@ export default function Question4({ id, onButtonClick }) {
               className="h-full w-48 cursor-pointer hover:border-8 hover:border-blue-500"
             />
           </div>
+          <input type="hidden" name="" id="hidden" />
         </form>
         <div className="flex h-fit w-full justify-center border  ">
           <Link

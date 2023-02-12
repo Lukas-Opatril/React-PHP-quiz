@@ -3,12 +3,16 @@ import { Link } from "react-router-dom";
 document.addEventListener("click", function (event) {
   if (event.target.tagName === "IMG") {
     const imgArray = Array.from(document.querySelectorAll("IMG"));
+
     imgArray.forEach((oneImg) => {
       oneImg.classList.remove("chosen-img");
-      oneImg.removeAttribute("id");
+    
     });
+    document.getElementById("hidden").removeAttribute("name");
     event.target.classList.add("chosen-img");
-    event.target.addAttribute("id", "q4-chosen");
+    document
+      .getElementById("hidden")
+      .setAttribute("name", `${event.target.name}`);
   }
 });
 
@@ -29,6 +33,7 @@ export default function Question4({ id, onButtonClick }) {
             <img
               src="../../src/assets/picture2.jpg"
               alt="q4-1"
+              name="q4-1"
               className="h-full w-48 cursor-pointer hover:border-8 hover:border-blue-500 "
             />
           </div>
@@ -36,6 +41,7 @@ export default function Question4({ id, onButtonClick }) {
             <img
               src="../../src/assets/picture3.jpg"
               alt="q4-2"
+              name="q4-2"
               className="h-full w-48 cursor-pointer hover:border-8 hover:border-blue-500"
             />
           </div>
@@ -43,6 +49,7 @@ export default function Question4({ id, onButtonClick }) {
             <img
               src="../../src/assets/picture4.jpg"
               alt="q4-3"
+              name="q4-3"
               className="h-full w-48 cursor-pointer hover:border-8 hover:border-blue-500"
             />
           </div>
@@ -50,9 +57,11 @@ export default function Question4({ id, onButtonClick }) {
             <img
               src="../../src/assets/picture5.jpg"
               alt="q4-4"
+              name="q4-4"
               className="h-full w-48 cursor-pointer hover:border-8 hover:border-blue-500"
             />
           </div>
+          <input type="hidden" name="" id="hidden" />
         </form>
         <div className="flex h-fit w-full justify-center my-3 ">
           <Link

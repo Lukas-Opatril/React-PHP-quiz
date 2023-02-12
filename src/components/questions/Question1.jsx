@@ -11,19 +11,19 @@ export default function Question0({ id, onButtonClick }) {
         </h1>
         <form action="" className="w-full text-xl">
           <div className=" p-4 border w-full flex items-center text-3xl ">
-            <input type="checkbox" value="PCIe 1.0" name="check[]" />
+            <input type="checkbox" value="PCIe 1.0" name="check1[]" />
             <span className="ml-2">PCIe 1.0</span>
           </div>
           <div className="p-4 border w-full flex items-center text-3xl">
-            <input type="checkbox" value="PCIe 2.0" name="check[]" />
+            <input type="checkbox" value="PCIe 2.0" name="check1[]" />
             <span className="ml-2">PCIe 2.0</span>
           </div>
           <div className="p-4 border w-full flex items-center text-3xl">
-            <input type="checkbox" value="PCIe 7.5" name="check[]" />
+            <input type="checkbox" value="PCIe 7.5" name="check1[]" />
             <span className="ml-2">PCIe 7.5</span>
           </div>
           <div className="p-4 border w-full flex items-center text-3xl">
-            <input type="checkbox" value="PCIe 6.0" name="check[]" />
+            <input type="checkbox" value="PCIe 6.0" name="check1[]" />
             <span className="ml-2">PCIe 6</span>
           </div>
           <div className=" w-full h-fit justify-end flex items-center text-3xl">
