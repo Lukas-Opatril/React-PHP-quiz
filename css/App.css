@@ -8,6 +8,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  overflow:hidden;
 }
 .nav {
   background: rgba(19, 131, 197, 0.19);
